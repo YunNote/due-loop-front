@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="800" viewBox="0 0 1280 800">
+<defs>
+<linearGradient id="g_sub" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f5576c"/><stop offset="100%" stop-color="#f093fb"/></linearGradient>
+<linearGradient id="g_ins" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4facfe"/><stop offset="100%" stop-color="#00f2fe"/></linearGradient>
+<linearGradient id="g_mem" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#43e97b"/><stop offset="100%" stop-color="#38f9d7"/></linearGradient>
+<linearGradient id="g_pub" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#764ba2"/></linearGradient>
+<linearGradient id="g_etc" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#868f96"/><stop offset="100%" stop-color="#596164"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1280" height="800" fill="#0f172a" rx="0"/>
+<rect x="0" y="0" width="210" height="800" fill="#1e293b" rx="0"/>
+<line x1="210" y1="0" x2="210" y2="800" stroke="#334155" stroke-width="0.5"/>
+<rect x="16" y="16" width="28" height="28" fill="#1e3a5f" rx="8"/>
+<text x="30" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#60a5fa" text-anchor="middle">✓</text>
+<text x="52" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="500" fill="#f8fafc" text-anchor="start">DueLoop</text>
+<rect x="12" y="70" width="186" height="34" fill="#1e3a5f" rx="8"/>
+<text x="42" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#93c5fd" text-anchor="start">홈</text>
+<rect x="12" y="110" width="186" height="34" fill="none" rx="8"/>
+<text x="42" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94a3b8" text-anchor="start">전체 목록</text>
+<rect x="12" y="150" width="186" height="34" fill="none" rx="8"/>
+<text x="42" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94a3b8" text-anchor="start">알림 설정</text>
+<rect x="12" y="190" width="186" height="34" fill="none" rx="8"/>
+<text x="42" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94a3b8" text-anchor="start">내 정보</text>
+<rect x="210" y="0" width="1070" height="50" fill="#0f172a" rx="0"/>
+<text x="226" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="500" fill="#f8fafc" text-anchor="start">대시보드</text>
+<rect x="1198" y="10" width="30" height="30" fill="#1e293b" rx="15" stroke="#334155" stroke-width="0.5"/>
+<text x="1213" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#94a3b8" text-anchor="middle">◔</text>
+<rect x="1236" y="10" width="30" height="30" fill="#1e3a5f" rx="15"/>
+<text x="1251" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#93c5fd" text-anchor="middle">김</text>
+<line x1="210" y1="50" x2="1280" y2="50" stroke="#334155" stroke-width="0.5"/>
+<rect x="226" y="62" width="340" height="72" fill="#1e293b" rx="10"/>
+<rect x="226" y="62" width="3" height="72" fill="#ef4444" rx="0"/>
+<text x="240" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="start">오늘 마감</text>
+<text x="240" y="114" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="500" fill="#fca5a5" text-anchor="start">1</text>
+<rect x="574" y="62" width="340" height="72" fill="#1e293b" rx="10"/>
+<rect x="574" y="62" width="3" height="72" fill="#f59e0b" rx="0"/>
+<text x="588" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="start">7일 이내</text>
+<text x="588" y="114" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="500" fill="#fcd34d" text-anchor="start">2</text>
+<rect x="922" y="62" width="340" height="72" fill="#1e293b" rx="10"/>
+<rect x="922" y="62" width="3" height="72" fill="#3b82f6" rx="0"/>
+<text x="936" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="start">30일 이내</text>
+<text x="936" y="114" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="500" fill="#93c5fd" text-anchor="start">2</text>
+<text x="226" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="start">오늘 마감</text>
+<text x="1168" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#60a5fa" text-anchor="start">전체보기 →</text>
+<rect x="226" y="178" width="1038" height="60" fill="#1e293b" rx="12"/>
+<rect x="238" y="188" width="40" height="40" fill="url(#g_sub)" rx="12"/>
+<text x="258" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">N</text>
+<text x="290" y="203" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#f8fafc" text-anchor="start">Netflix 구독</text>
+<text x="290" y="219" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">구독 · 오늘</text>
+<rect x="1208" y="198" width="38" height="22" fill="#450a0a" rx="11"/>
+<text x="1227" y="213" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#fca5a5" text-anchor="middle">오늘</text>
+<line x1="238" y1="234" x2="1252" y2="234" stroke="#334155" stroke-width="0.5"/>
+<text x="226" y="267" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="start">7일 이내</text>
+<text x="1168" y="267" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#60a5fa" text-anchor="start">전체보기 →</text>
+<rect x="226" y="280" width="1038" height="112" fill="#1e293b" rx="12"/>
+<rect x="238" y="290" width="40" height="40" fill="url(#g_ins)" rx="12"/>
+<text x="258" y="314" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">자</text>
+<text x="290" y="305" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#f8fafc" text-anchor="start">자동차 보험</text>
+<text x="290" y="321" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">보험 · 6월 25일</text>
+<rect x="1208" y="300" width="44" height="22" fill="#431407" rx="11"/>
+<text x="1230" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#fcd34d" text-anchor="middle">3일 후</text>
+<line x1="238" y1="336" x2="1252" y2="336" stroke="#334155" stroke-width="0.5"/>
+<rect x="238" y="342" width="40" height="40" fill="url(#g_sub)" rx="12"/>
+<text x="258" y="366" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">N</text>
+<text x="290" y="357" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#f8fafc" text-anchor="start">Notion 연간</text>
+<text x="290" y="373" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">구독 · 6월 27일</text>
+<rect x="1208" y="352" width="44" height="22" fill="#431407" rx="11"/>
+<text x="1230" y="367" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#fcd34d" text-anchor="middle">5일 후</text>
+<line x1="238" y1="388" x2="1252" y2="388" stroke="#334155" stroke-width="0.5"/>
+<text x="226" y="423" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="start">30일 이내</text>
+<text x="1168" y="423" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#60a5fa" text-anchor="start">전체보기 →</text>
+<rect x="226" y="436" width="1038" height="112" fill="#1e293b" rx="12"/>
+<rect x="238" y="446" width="40" height="40" fill="url(#g_mem)" rx="12"/>
+<text x="258" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">헬</text>
+<text x="290" y="461" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#f8fafc" text-anchor="start">헬스장 회원권</text>
+<text x="290" y="477" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">멤버십 · 7월 5일</text>
+<rect x="1201" y="456" width="51" height="22" fill="#1e3a5f" rx="11"/>
+<text x="1226" y="471" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">13일 후</text>
+<line x1="238" y1="492" x2="1252" y2="492" stroke="#334155" stroke-width="0.5"/>
+<rect x="238" y="498" width="40" height="40" fill="url(#g_pub)" rx="12"/>
+<text x="258" y="522" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">운</text>
+<text x="290" y="513" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#f8fafc" text-anchor="start">운전면허 갱신</text>
+<text x="290" y="529" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">공공 · 7월 15일</text>
+<rect x="1201" y="508" width="51" height="22" fill="#1e3a5f" rx="11"/>
+<text x="1226" y="523" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">23일 후</text>
+<line x1="238" y1="544" x2="1252" y2="544" stroke="#334155" stroke-width="0.5"/>
+</svg>
