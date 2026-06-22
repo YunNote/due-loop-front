@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --surface: #f8fafc;
+  --border: #e2e8f0;
+  --foreground: #0f172a;
+  --foreground-secondary: #64748b;
+  --foreground-muted: #94a3b8;
+
+  --brand: #3b82f6;
+  --brand-soft: #eff6ff;
+  --brand-soft-foreground: #1d4ed8;
+
+  --badge-today-bg: #fef2f2;
+  --badge-today-fg: #991b1b;
+  --badge-soon-bg: #fffbeb;
+  --badge-soon-fg: #92400e;
+  --badge-month-bg: #eff6ff;
+  --badge-month-fg: #1e40af;
+
+  --tier-today: #ef4444;
+  --tier-soon: #f59e0b;
+  --tier-month: #3b82f6;
+
+  --cat-subscription-from: #f5576c;
+  --cat-subscription-to: #f093fb;
+  --cat-insurance-from: #4facfe;
+  --cat-insurance-to: #00f2fe;
+  --cat-membership-from: #43e97b;
+  --cat-membership-to: #38f9d7;
+  --cat-public-from: #667eea;
+  --cat-public-to: #764ba2;
+  --cat-etc-from: #868f96;
+  --cat-etc-to: #596164;
+
+  --kakao-bg: #fee500;
+  --kakao-fg: #3c1e1e;
+  --naver-bg: #03c75a;
+  --naver-fg: #ffffff;
+}
+
+.dark {
+  --background: #0f172a;
+  --surface: #1e293b;
+  --border: #334155;
+  --foreground: #f8fafc;
+  --foreground-secondary: #94a3b8;
+  --foreground-muted: #64748b;
+
+  --brand: #60a5fa;
+  --brand-soft: #1e3a5f;
+  --brand-soft-foreground: #93c5fd;
+
+  --badge-today-bg: #450a0a;
+  --badge-today-fg: #fca5a5;
+  --badge-soon-bg: #431407;
+  --badge-soon-fg: #fcd34d;
+  --badge-month-bg: #1e3a5f;
+  --badge-month-fg: #93c5fd;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-muted: var(--foreground-muted);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-soft-foreground: var(--brand-soft-foreground);
+
+  --color-badge-today-bg: var(--badge-today-bg);
+  --color-badge-today-fg: var(--badge-today-fg);
+  --color-badge-soon-bg: var(--badge-soon-bg);
+  --color-badge-soon-fg: var(--badge-soon-fg);
+  --color-badge-month-bg: var(--badge-month-bg);
+  --color-badge-month-fg: var(--badge-month-fg);
+
+  --color-tier-today: var(--tier-today);
+  --color-tier-soon: var(--tier-soon);
+  --color-tier-month: var(--tier-month);
+
+  --color-kakao-bg: var(--kakao-bg);
+  --color-kakao-fg: var(--kakao-fg);
+  --color-naver-bg: var(--naver-bg);
+  --color-naver-fg: var(--naver-fg);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
