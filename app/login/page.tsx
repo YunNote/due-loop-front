@@ -1,4 +1,12 @@
-export default function LoginPage() {
+import { GoogleLoginButton } from "@/components/auth/google-login-button";
+
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string }>;
+}) {
+  const { next } = await searchParams;
+
   return (
     <div className="flex min-h-screen flex-1 flex-col md:flex-row">
       <div className="hidden w-[420px] shrink-0 flex-col items-center justify-center border-r-[0.5px] border-brand bg-brand-soft px-8 md:flex">
@@ -31,12 +39,7 @@ export default function LoginPage() {
         </div>
 
         <div className="mt-8 flex w-full max-w-[320px] flex-col gap-3">
-          <button
-            type="button"
-            className="h-11 rounded-lg border-[0.5px] border-border bg-surface text-sm text-foreground"
-          >
-            G&nbsp;&nbsp;&nbsp;구글로 계속하기
-          </button>
+          <GoogleLoginButton next={next} />
           <button type="button" className="h-11 rounded-lg bg-kakao-bg text-sm text-kakao-fg">
             카카오로 계속하기
           </button>

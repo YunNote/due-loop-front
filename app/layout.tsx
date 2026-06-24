@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeScript } from "@/components/theme-script";
+import { AuthProvider } from "@/lib/auth/auth-context";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function RootLayout({
     <html lang="ko" className="h-full" suppressHydrationWarning>
       <body className="min-h-full flex flex-col bg-background text-foreground antialiased" suppressHydrationWarning>
         <ThemeScript />
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
