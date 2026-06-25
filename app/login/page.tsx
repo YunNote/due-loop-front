@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GoogleLoginButton } from "@/components/auth/google-login-button";
 import { KakaoLoginButton } from "@/components/auth/kakao-login-button";
 import { NaverLoginButton } from "@/components/auth/naver-login-button";
@@ -21,11 +22,8 @@ export default async function LoginPage({
       {/* Left — rich gradient panel */}
       <div className="hidden md:flex w-[460px] shrink-0 flex-col justify-between bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 px-12 py-10">
         {/* Logo */}
-        <div className="flex items-center gap-2.5">
-          <div className="flex size-8 items-center justify-center rounded-lg bg-white/20 backdrop-blur-sm">
-            <span className="text-sm font-bold text-white">✓</span>
-          </div>
-          <span className="text-lg font-semibold text-white">DueLoop</span>
+        <div className="rounded-2xl bg-white px-5 py-3">
+          <Image src="/logo-trimmed.png" alt="DueLoop" width={180} height={169} className="h-14 w-auto object-contain" />
         </div>
 
         {/* Hero copy */}
@@ -63,11 +61,8 @@ export default async function LoginPage({
       <div className="flex flex-1 flex-col items-center justify-center bg-white px-8 py-16">
         {/* Mobile header */}
         <div className="mb-10 flex flex-col items-center md:hidden">
-          <div className="flex size-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg">
-            <span className="text-2xl font-bold text-white">✓</span>
-          </div>
-          <p className="mt-4 text-xl font-semibold text-slate-900">DueLoop</p>
-          <p className="mt-1 text-sm text-slate-600">
+          <Image src="/logo-trimmed.png" alt="DueLoop" width={220} height={220} className="w-56 h-auto object-contain" />
+          <p className="mt-2 text-sm text-slate-600">
             마감과 갱신, 놓치기 전에 먼저 알려드려요
           </p>
         </div>
