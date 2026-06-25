@@ -66,7 +66,7 @@ export function GoogleLoginButton({ next }: { next?: string }) {
       logo_alignment: "left",
       text: "continue_with",
       locale: "ko",
-      width: 320,
+      width: 340,
     });
   }, [handleCredentialResponse]);
 
