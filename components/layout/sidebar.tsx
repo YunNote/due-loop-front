@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -15,12 +16,16 @@ export function Sidebar() {
 
   return (
     <aside className="hidden w-[210px] shrink-0 flex-col border-r-[0.5px] border-border bg-surface md:flex">
-      <div className="flex items-center gap-2 p-4">
-        <div className="flex size-7 items-center justify-center rounded-lg bg-brand-soft text-sm font-bold text-brand">
-          ✓
-        </div>
-        <span className="text-[15px] font-medium text-foreground">DueLoop</span>
-      </div>
+      <Link href="/" className="flex items-center justify-center px-5 py-5">
+        <Image
+          src="/logo-trimmed.png"
+          alt="DueLoop"
+          width={130}
+          height={122}
+          className="h-16 w-auto object-contain"
+          priority
+        />
+      </Link>
       <nav className="flex flex-col gap-1 px-3">
         {NAV_ITEMS.map((item) => {
           const active = pathname === item.href;
