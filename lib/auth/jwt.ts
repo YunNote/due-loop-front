@@ -8,6 +8,15 @@ function decodeJwtExpiry(token: string): number | null {
   }
 }
 
+export function decodeJwtPayload(token: string): Record<string, unknown> | null {
+  try {
+    const payload = token.split(".")[1];
+    return JSON.parse(atob(payload.replace(/-/g, "+").replace(/_/g, "/")));
+  } catch {
+    return null;
+  }
+}
+
 export function isTokenExpired(token: string): boolean {
   const expiresAt = decodeJwtExpiry(token);
   if (expiresAt === null) return true;

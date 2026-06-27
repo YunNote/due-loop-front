@@ -3,27 +3,27 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --surface: #f8fafc;
-  --border: #e2e8f0;
-  --foreground: #0f172a;
-  --foreground-secondary: #64748b;
-  --foreground-muted: #94a3b8;
+  --background: #F7F7FA;
+  --surface: #FFFFFF;
+  --border: #E8E8EE;
+  --foreground: #1A1A28;
+  --foreground-secondary: #636375;
+  --foreground-muted: #A0A0B0;
 
-  --brand: #3b82f6;
-  --brand-soft: #eff6ff;
-  --brand-soft-foreground: #1d4ed8;
+  --brand: #6C63FF;
+  --brand-soft: rgba(108,99,255,0.1);
+  --brand-soft-foreground: #6C63FF;
 
-  --badge-today-bg: #fef2f2;
-  --badge-today-fg: #991b1b;
-  --badge-soon-bg: #fffbeb;
-  --badge-soon-fg: #92400e;
-  --badge-month-bg: #eff6ff;
-  --badge-month-fg: #1e40af;
+  --badge-today-bg: #FFF0F0;
+  --badge-today-fg: #E53E3E;
+  --badge-soon-bg: #FFF8E6;
+  --badge-soon-fg: #D97706;
+  --badge-month-bg: rgba(108,99,255,0.1);
+  --badge-month-fg: #6C63FF;
 
-  --tier-today: #ef4444;
-  --tier-soon: #f59e0b;
-  --tier-month: #3b82f6;
+  --tier-today: #E53E3E;
+  --tier-soon: #D97706;
+  --tier-month: #6C63FF;
 
   --cat-subscription-from: #f5576c;
   --cat-subscription-to: #f093fb;
@@ -43,23 +43,27 @@
 }
 
 .dark {
-  --background: #0f172a;
-  --surface: #1e293b;
-  --border: #334155;
-  --foreground: #f8fafc;
-  --foreground-secondary: #94a3b8;
-  --foreground-muted: #64748b;
+  --background: #0F0F14;
+  --surface: #1C1C24;
+  --border: #38384A;
+  --foreground: #F0F0FA;
+  --foreground-secondary: #9090A8;
+  --foreground-muted: #606078;
 
-  --brand: #60a5fa;
-  --brand-soft: #1e3a5f;
-  --brand-soft-foreground: #93c5fd;
+  --brand: #8B7FFF;
+  --brand-soft: rgba(139,127,255,0.12);
+  --brand-soft-foreground: #8B7FFF;
 
-  --badge-today-bg: #450a0a;
-  --badge-today-fg: #fca5a5;
-  --badge-soon-bg: #431407;
-  --badge-soon-fg: #fcd34d;
-  --badge-month-bg: #1e3a5f;
-  --badge-month-fg: #93c5fd;
+  --badge-today-bg: rgba(229,83,83,0.15);
+  --badge-today-fg: #FF6B6B;
+  --badge-soon-bg: rgba(255,159,10,0.15);
+  --badge-soon-fg: #FF9F0A;
+  --badge-month-bg: rgba(139,127,255,0.15);
+  --badge-month-fg: #8B7FFF;
+
+  --tier-today: #FF6B6B;
+  --tier-soon: #FF9F0A;
+  --tier-month: #8B7FFF;
 }
 
 @theme inline {
@@ -90,8 +94,7 @@
   --color-naver-bg: var(--naver-bg);
   --color-naver-fg: var(--naver-fg);
 
-  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
-    sans-serif;
+  --font-sans: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { AppShell } from "@/components/layout/app-shell";
 import { CategoryIcon } from "@/components/category-icon";
 import { ItemRow } from "@/components/item-row";
@@ -9,19 +10,24 @@ import { AddItemModal } from "@/components/add-item-modal";
 import { RouteGuard } from "@/components/auth/route-guard";
 import { CATEGORY_META, CATEGORY_ORDER } from "@/lib/categories";
 import { MOCK_ITEMS } from "@/lib/mock-items";
+import type { Category } from "@/lib/types";
 
 export default function ListPage() {
   const [query, setQuery] = useState("");
   const [addOpen, setAddOpen] = useState(false);
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category") as Category | null;
 
-  const filtered = MOCK_ITEMS.filter((item) =>
-    item.name.toLowerCase().includes(query.toLowerCase())
-  );
+  const filtered = MOCK_ITEMS.filter((item) => {
+    const matchesQuery = item.name.toLowerCase().includes(query.toLowerCase());
+    const matchesCategory = !categoryParam || item.category === categoryParam;
+    return matchesQuery && matchesCategory;
+  });
 
   return (
     <RouteGuard>
       <AppShell
-        title="전체 목록"
+        title={categoryParam ? CATEGORY_META[categoryParam]?.label ?? "전체 목록" : "전체 목록"}
         headerRight={
           <>
             <Link

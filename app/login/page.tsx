@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { GuestGuard } from "@/components/auth/guest-guard";
 import { GoogleLoginButton } from "@/components/auth/google-login-button";
 import { KakaoLoginButton } from "@/components/auth/kakao-login-button";
 import { NaverLoginButton } from "@/components/auth/naver-login-button";
@@ -18,6 +19,7 @@ export default async function LoginPage({
   const { next } = await searchParams;
 
   return (
+    <GuestGuard>
     <div className="flex min-h-screen">
       {/* Left — rich gradient panel */}
       <div className="hidden md:flex w-[460px] shrink-0 flex-col justify-between bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 px-12 py-10">
@@ -87,5 +89,6 @@ export default async function LoginPage({
         </div>
       </div>
     </div>
+    </GuestGuard>
   );
 }
